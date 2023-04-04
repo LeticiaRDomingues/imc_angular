@@ -12,6 +12,7 @@ export class ImcComponent {
   resp : number = 0;
 
   result(){
+    this.resp = this.peso / (this.altura*this.altura);
 
   }
 
