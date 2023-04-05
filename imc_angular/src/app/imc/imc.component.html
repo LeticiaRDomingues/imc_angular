@@ -1,13 +1,15 @@
 <h1>Calculadora IMC</h1>
 
 <div>
-  <form>
-    <input type = "number" name = "peso" [(ngModel)] = "peso">
-    <input type = "number" name = "altura" [(ngModel)] = "altura">
+ <form>
+  <input type = "number" name = "altura" [(ngModel)] = "altura" class = "box">
+  <input type = "number" name = "peso" [(ngModel)] = "peso"  class = "box">
 
-    <button (click) = "result()">imc</button>
+  <button (click)="result()"> imc </button>
 
-    <input [value] = "resp">
+  <input [value]="resp"  class = "box">
 
-  </form>
+  <p>Seu IMC é: {{resultado}}</p>
+
+ </form>
 </div>
